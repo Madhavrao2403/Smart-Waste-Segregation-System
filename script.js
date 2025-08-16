@@ -26,7 +26,7 @@ sendButton.addEventListener('click', async () => {
    formData.append('image',file);
    try{
 
-    const response= await fetch('http://127.0.0.1:8000/imageprocess',{
+    const response= await fetch('https://smart-waste-segregation-system.onrender.com/',{
        method:'POST',
        body:formData
     });
