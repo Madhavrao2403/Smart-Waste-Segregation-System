@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Classification for smart bins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Garbage Classification for smart bins</h1>
+    </header>
+
+    <main>
+        <div class="upload">
+            <form id="uploadForm">
+                <input type="file" name="image" id="uploadfile" hidden accept="image/png image/jpg image/jpeg">
+                <label for="uploadfile"><i class="fas fa-cloud-upload-alt"></i><br>Upload Image</label>
+            </form>
+        </div>
+
+        <div class="display">
+            <h1>Image displays</h1>
+            <img src="#" alt="Image Preview" id="preview">
+        </div>
+
+        <div class="query">
+            <input type="submit" value="classify" id="send">
+            <div class="result">
+                <h2>Result</h2>
+                <div id="solution"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
